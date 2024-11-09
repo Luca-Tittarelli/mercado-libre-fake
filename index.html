@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Libre Fake</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="input.css">
+    <script type="module" src="./scripts/scripts.js"></script>
+    <script type="module" src="./scripts/banner.js"></script>
+    <script type="module" src="./scripts/search.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="h-20 w-full fixed flex items-center justify-center shadow-sm bg-[#FDE800]">
+        <div class="flex grow flex-1">
+            <img src="img/logo.png" alt="">
+        </div>
+        <nav>
+            <ul class="flex grow flex-1 m-auto [&>li>button]:font-semibold [&>li>button]:px-3 text-lg">
+                <li><button value="inicio">Inicio</button></li>
+                <li><button value="nosotros">Nosotros</butto|n></li>
+                <li><button value="servicios">Servicios</button></li>
+                <li><button value="contacto">Contacto</button></li>
+            </ul>
+        </nav>
+        <div class="flex grow flex-1">
+
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section id="inicio">
+            <img src="./img/banner.webp" alt="" srcset="" id="main-banner" class="w-full">
+            <div class="pb-20 xl:p-6 p-4" style="background: linear-gradient(to bottom, #FDE800, #ffffff);">
+                <div class="min-h-36 bg-white rounded-xl max-w-[1300px] m-auto shadow-lg hover:shadow-xl p-6 flex- flex-col justify-center-center">
+                    <h2 class="sm:text-2xl text-xl font-semibold text-black text-center">¡Encontrá el producto que buscás!</h2>
+                    <form action="" class="pt-6 flex justify-between items-center h-16 gap-4" id="search-form">
+                        <input type="text" name="" class="bg-gray-50 rounded-md border-[2px] border-solid border-[#666] px-4 py-2 w-full h-full placeholder:text-lg placeholder:text-gray-500" placeholder="Buscar Productos, Marcas y Más..." id="search-input" required>
+                        <button type="submit" class="rounded-full h-full w-auto aspect-square">
+                            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+            <div id="results" class="max-w-[1300px] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 auto-rows-[300px] m-auto gap-2 pt-10">
+            </div>
+            <h4 class="uppercase font-semibold text-lg text-center">Medios de pago</h4>
+            <div class="flex flex-col justify-center sm:overflow-x-hidden overflow-x-scroll h-auto">
+                <div class="flex m-auto h-auto gap-6 [&>div>p]:text-xs [&>div>p]:font-semibold">
+                    <div class="h-auto w-28 snap-center">
+                        <img src="./img/bancos/1.webp" alt="" class="w-full">
+                        <p>6 CUOTAS TODOS LOS DÍAS</p>
+                    </div>
+                    <div class="h-auto w-28 snap-center">
+                        <img src="./img/bancos/2.webp" alt="" class="w-full">
+                        <p>12 CUOTAS TODOS LOS DÍAS</p>
+                    </div>
+                    <div class="h-auto w-28 snap-center">
+                        <img src="./img/bancos/3.webp" alt="" class="w-full">
+                        <p>6 CUOTAS TODOS LOS DÍAS</p>
+                    </div>
+                    <div class="h-auto w-28 snap-center">
+                        <img src="./img/bancos/4.webp" alt="" class="w-full">
+                        <p>3 CUOTAS TODOS LOS DÍAS</p>
+                    </div>
+                    <div class="h-auto w-28 snap-center">
+                        <img src="./img/bancos/5.webp" alt="" class="w-full">
+                        <p>MERCADO PAGO</p>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section id="nosotros" class="pt-10 max-w-[1200px] m-auto px-4 sm:px-6 lg:px-8" style="display: none;">
+            <h2 class="text-3xl font-semibold text-center pb-6 text-gray-800">Nosotros</h2>
+            <h3 class="text-xl font-semibold text-center pb-4 text-gray-700">¿Querés saber más de nuestra historia?</h3>
+            <div class="pb-12 sm:pb-20">
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Comenzamos como un <span class="font-semibold text-blue-600">pequeño equipo</span> con una gran idea: <span class="font-semibold text-blue-600">hacer que encontrar productos en línea fuera simple y accesible para todos</span>. Al principio, teníamos solo unas pocas categorías y un grupo reducido de personas detrás del proyecto, pero con el tiempo, <span class="font-semibold text-blue-600">fuimos creciendo y adaptándonos</span> a lo que nuestros usuarios necesitaban.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed mt-4">
+                    Hoy, después de años de trabajo y dedicación, seguimos comprometidos con esa misma misión. Hemos creado una plataforma que <span class="font-semibold text-blue-600">facilita cada búsqueda</span>, ayuda a <span class="font-semibold text-blue-600">explorar nuevas opciones</span> y <span class="font-semibold text-blue-600">conecta a las personas</span> con lo que realmente están buscando. Sabemos que cada búsqueda cuenta, y nos esforzamos por ofrecer una experiencia que sea <span class="font-semibold text-blue-600">rápida, confiable y satisfactoria</span>.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed mt-4">
+                    Nos enorgullece ser parte de cada paso, desde <span class="font-semibold text-blue-600">los primeros clics</span> hasta <span class="font-semibold text-blue-600">la satisfacción de encontrar justo lo que necesitas</span>. Y aunque hemos crecido, nuestro propósito sigue siendo el mismo: estar ahí para ti, acompañándote en cada búsqueda y en cada descubrimiento.
+                </p>
+            </div>
+        
+            <div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-[250px_250px] auto-rows-[400px] md:w-full max-w-[450px] md:max-w-none gap-4 m-auto">
+                <article class="col-span-2 row-span-1 bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">Misión</h3>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Facilitar el comercio digital, ofreciendo una plataforma segura, ágil y accesible para que personas y empresas en América Latina puedan comprar, vender, y hacer crecer sus negocios, promoviendo el desarrollo económico y la inclusión financiera en la región.
+                    </p>
+                </article>
+                
+                <article class="col-span-2 row-span-1 bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">Visión</h3>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Ser la plataforma líder en soluciones de comercio y tecnología en América Latina, impulsando la transformación digital para mejorar la vida de millones de personas y fortalecer el ecosistema empresarial de la región.
+                    </p>
+                </article>
+        
+                <article class="col-span-1 row-span-full bg-[#fde800] text-black p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">Objetivo</h3>
+                    <p class="text-gray-800 text-base leading-relaxed">
+                        Ampliar la oferta de productos y servicios en el mercado digital, garantizando experiencias de usuario innovadoras y seguras, mientras promovemos el crecimiento del comercio electrónico y la adopción de servicios financieros digitales en América Latina.
+                    </p>
+                </article>
+            </div>
+        </section> 
+        <section id="servicios" class="pt-10 max-w-[1200px] m-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-semibold text-center pb-6 text-gray-800">Nuestros Servicios</h2>
+            <h3 class="text-xl font-semibold text-center pb-4 text-gray-700">¿Qué hacemos por vos?</h3>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-semibold text-gray-800 text-center mb-2">Compra y Venta Segura</h4>
+                    <p class="text-gray-600 text-base text-center leading-relaxed">
+                        Con Mercado Libre, podés comprar o vender productos de manera rápida, fácil y segura. Nuestra plataforma está diseñada para garantizar que cada transacción se realice de forma confiable, con opciones de pago protegidas.
+                    </p>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-semibold text-gray-800 text-center mb-2">Pago Seguro</h4>
+                    <p class="text-gray-600 text-base text-center leading-relaxed">
+                        Garantizamos que tu compra o venta se realice sin inconvenientes. Mercado Pago, nuestra herramienta de pago, ofrece múltiples opciones seguras para que tanto compradores como vendedores estén protegidos en todo momento.
+                    </p>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-semibold text-gray-800 text-center mb-2">Envíos Rápidos y Seguros</h4>
+                    <p class="text-gray-600 text-base text-center leading-relaxed">
+                        Te ofrecemos opciones de envío a nivel nacional, con seguimiento en tiempo real para que estés al tanto de la ubicación de tu paquete. Además, muchos vendedores te ofrecen envíos gratis o con tarifas reducidas.
+                    </p>
+                </div>
+        
+                <!-- Servicio 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-semibold text-gray-800 text-center mb-2">Mercado Crédito</h4>
+                    <p class="text-gray-600 text-base text-center leading-relaxed">
+                        Accedé a préstamos personales y financiamiento para compras en nuestro sitio. Con Mercado Crédito, podés financiar tus compras de forma fácil y conveniente, directamente desde tu cuenta de Mercado Libre.
+                    </p>
+                </div>
+        
+                <!-- Servicio 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-semibold text-gray-800 text-center mb-2">Mercado Pago</h4>
+                    <p class="text-gray-600 text-base text-center leading-relaxed">
+                        Mercado Pago es nuestra billetera digital que te permite realizar pagos y cobros de manera rápida y segura. Puedes usarla para comprar productos, pagar servicios, transferir dinero y mucho más, todo desde tu teléfono.
+                    </p>
+                </div>
+        
+                <!-- Servicio 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-semibold text-gray-800 text-center mb-2">Servicios Financieros</h4>
+                    <p class="text-gray-600 text-base text-center leading-relaxed">
+                        Mercado Libre también ofrece una serie de servicios financieros, como préstamos personales y seguros, a través de Mercado Crédito. Además, facilitamos el pago de tus servicios mediante Mercado Pago, sin necesidad de salir de nuestra plataforma.
+                    </p>
+                </div>
+            </div>
+        </section>     
+        <section id="contacto" class="pt-10" style="display: none;">Contacto</section>
+    </main>
+    <footer class="h-20 w-full flex justify-center items-center shadow-xl mt-20" style="box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);">
+        <p class="text-lg">&copy; Todos los derechos reservados - Mercado libre</p>
+    </footer>    
+</body>
+</html>

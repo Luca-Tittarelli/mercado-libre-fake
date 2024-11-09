@@ -1,0 +1,31 @@
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar archivos de configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación y salida
+dist/
+build/
+
+# Archivos de lock de paquetes
+yarn.lock
+pnpm-lock.yaml
+
+# Archivos de log
+*.log
+npm-debug.log*
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos de configuración específicos de editores
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Ignorar la carpeta img/bancos en caso de que quieras excluir las imágenes
+img/bancos/

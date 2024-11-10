@@ -26,6 +26,3 @@ npm-debug.log*
 .vscode/
 .idea/
 *.sublime-workspace
-
-# Ignorar la carpeta img/bancos en caso de que quieras excluir las imágenes
-img/bancos/

@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Libre Fake</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="input.css">
-    <script type="module" src="./scripts/scripts.js"></script>
-    <script type="module" src="./scripts/banner.js"></script>
-    <script type="module" src="./scripts/search.js"></script>
+    <link rel="stylesheet" href="./css/input.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="h-20 w-full fixed flex items-center justify-center shadow-sm bg-[#FDE800]">
-        <div class="flex grow flex-1">
-            <img src="img/logo.png" alt="">
+    <header class="h-20 w-full fixed flex items-center shadow-sm bg-[#FDE800] z-20 transition-transform duration-300">
+        <div class="flex grow flex-1 z-40 max-sm:absolute">
+            <img src="img/logo.png" alt="Mercado Libre">
         </div>
-        <nav>
-            <ul class="flex grow flex-1 m-auto [&>li>button]:font-semibold [&>li>button]:px-3 text-lg">
+        <nav class="max-sm:w-full h-auto sm:z-30 z-[15] flex grow flex-1 sm:items-center items-end justify-center" id="main-nav">
+            <ul class="flex sm:flex-row flex-col w-full h-full sm:justify-center justify-end text-center m-auto max-sm:pt-20 [&>li>button]:font-semibold [&>li>button]:px-3 text-lg bg-gray-100 sm:bg-transparent max-sm:[&>li>button]:px-8 max-sm:[&>li>button]:py-4 max-sm:[&>li>button]:m-auto" id="nav-list">
                 <li><button value="inicio">Inicio</button></li>
-                <li><button value="nosotros">Nosotros</butto|n></li>
+                <li><button value="nosotros">Nosotros</button></li>
                 <li><button value="servicios">Servicios</button></li>
                 <li><button value="contacto">Contacto</button></li>
             </ul>
         </nav>
-        <div class="flex grow flex-1">
-
+        <div class="flex grow flex-1 justify-end max-sm:absolute right-0 z-40">
+            <button id="responsive-button">
+                <svg class="sm:hidden h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 6h16" />
+                    <path d="M7 12h13" />
+                    <path d="M10 18h10" />
+                </svg>
+            </button>
         </div>
+        <div class="w-full h-full absolute bg-[#fde800] z-30 sm:hidden"></div>
     </header>
-
+    
     <main class="pt-20">
         <section id="inicio">
             <img src="./img/banner.webp" alt="" srcset="" id="main-banner" class="w-full">
-            <div class="pb-20 xl:p-6 p-4" style="background: linear-gradient(to bottom, #FDE800, #ffffff);">
+            <div class="pb-20 xl:px-6 px-4" style="background: linear-gradient(to bottom, #FDE800, #ffffff);">
                 <div class="min-h-36 bg-white rounded-xl max-w-[1300px] m-auto shadow-lg hover:shadow-xl p-6 flex- flex-col justify-center-center">
                     <h2 class="sm:text-2xl text-xl font-semibold text-black text-center">¡Encontrá el producto que buscás!</h2>
                     <form action="" class="pt-6 flex justify-between items-center h-16 gap-4" id="search-form">
@@ -46,7 +51,7 @@
             </div>
             <div id="results" class="max-w-[1300px] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 auto-rows-[300px] m-auto gap-2 pt-10">
             </div>
-            <h4 class="uppercase font-semibold text-lg text-center">Medios de pago</h4>
+            <h4 class="uppercase font-semibold text-lg text-center py-10">Medios de pago</h4>
             <div class="flex flex-col justify-center sm:overflow-x-hidden overflow-x-scroll h-auto">
                 <div class="flex m-auto h-auto gap-6 [&>div>p]:text-xs [&>div>p]:font-semibold">
                     <div class="h-auto w-28 snap-center">
@@ -55,7 +60,7 @@
                     </div>
                     <div class="h-auto w-28 snap-center">
                         <img src="./img/bancos/2.webp" alt="" class="w-full">
-                        <p>12 CUOTAS TODOS LOS DÍAS</p>
+                        <p>12 CUOTAS LOS MARTES</p>
                     </div>
                     <div class="h-auto w-28 snap-center">
                         <img src="./img/bancos/3.webp" alt="" class="w-full">
@@ -70,7 +75,21 @@
                         <p>MERCADO PAGO</p>
                     </div>
                 </div>
-            </div>            
+            </div>
+            <a href="https://play.mercadolibre.com.ar/" class="xl:w-full w-[90%] max-w-[1200px] rounded-lg aspect-[1180/355] bg-gray-600 m-auto mt-20 p-6 flex flex-col md:flex-row items-center justify-between" style="background: url('./img/mercado-play.webp');">
+                <div class="m-auto ml-10 block">
+                    <img src="./img/logo-mercado-play.png" alt="">
+                    <h4 class="text-3xl font-semibold block text-white">
+                        Ahora podés ver
+                    </h4>
+                    <h4 class="text-3xl font-semibold block text-white">
+                        Series y pleículas
+                    </h4>
+                    <span class="uppercase bg-[#00A650] rounded-full px-2 py-1 text-xs text-white inline-block mt-4">GRATIS</span>
+                    <button class="px-2 py-1 text-sm bg-gray-300 bg-opacity-20 text-white rounded-md font-semibold block mt-8">Ir a Mercado Play</button>
+                </div>
+                <img src="./img/movie-poster.jpg" alt="" class="md:h-full md:w-auto w-full md:m-0 m-4">
+            </a>        
         </section>
         <section id="nosotros" class="pt-10 max-w-[1200px] m-auto px-4 sm:px-6 lg:px-8" style="display: none;">
             <h2 class="text-3xl font-semibold text-center pb-6 text-gray-800">Nosotros</h2>
@@ -114,7 +133,7 @@
             <h2 class="text-3xl font-semibold text-center pb-6 text-gray-800">Nuestros Servicios</h2>
             <h3 class="text-xl font-semibold text-center pb-4 text-gray-700">¿Qué hacemos por vos?</h3>
             
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 [&>div]:border-[1px] [&>div]:border-gray-200">
                 <!-- Servicio 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <h4 class="text-lg font-semibold text-gray-800 text-center mb-2">Compra y Venta Segura</h4>
@@ -164,10 +183,32 @@
                 </div>
             </div>
         </section>     
-        <section id="contacto" class="pt-10" style="display: none;">Contacto</section>
+        <section id="contacto" class="pt-10 max-w-[1200px] m-auto min-h-screen" style="display: none;">
+            <h2 class="text-3xl m-auto text-center font-semibold">Contáctanos!</h2>
+            <form action="" class="flex flex-col w-[90%] sm:w-[80%] xl:w-[60%] mx-auto p-6 bg-white rounded-lg shadow-md" id="contact-form">
+                <div class="flex flex-col sm:flex-row w-full gap-4 mb-4">
+                    <input type="text" name="nombre_apellido" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nombre" required>
+                    <input type="text" name="apellido_apellido" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Apellido" required>
+                </div>
+                
+                <input type="tel" name="telefono" id="telefono" class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Teléfono" required />
+            
+                <input type="email" name="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email" required />
+            
+                <textarea name="mensaje" id="mensaje" class="w-full p-3 border border-gray-300 rounded-lg resize-none mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Mensaje" required></textarea>
+            
+                <input type="submit" value="Enviar" class="w-full p-3 uppercase font-semibold text-white bg-[#fde800] border-none rounded-lg cursor-pointer hover:bg-[#fdd900] focus:ring-4 focus:ring-[#fde800] transition duration-200">
+            </form>            
+        </section>
     </main>
     <footer class="h-20 w-full flex justify-center items-center shadow-xl mt-20" style="box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);">
-        <p class="text-lg">&copy; Todos los derechos reservados - Mercado libre</p>
+        <p class="text-lg text-center">&copy; Ningún derecho reservado - FakeMELI</p>
     </footer>    
+
 </body>
+    <script type="module" src="./scripts/scripts.js"></script>
+    <script type="module" src="./scripts/banner.js"></script>
+    <script type="module" src="./scripts/search.js"></script>
+    <script type="module" src="./scripts/contact.js"></script>
+    <script type="module" src="./scripts/header.js"></script>
 </html>

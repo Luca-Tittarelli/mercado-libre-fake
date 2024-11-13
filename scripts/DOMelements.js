@@ -18,7 +18,7 @@ export const resultElement = (r) => {
 };
 export const loadingElement = () => {
     return `
-        <div class="max-w-xs w-full bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden animate-pulse">
+        <div class="max-w-xs w-full bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden animate-pulse z-10">
             <div class="w-full h-48 bg-gray-300"></div>
             <div class="p-4">
                 <div class="h-4 bg-gray-300 rounded w-3/4 mb-2"></div>
@@ -30,3 +30,9 @@ export const loadingElement = () => {
         </div>
     `;
 };
+export const notFoundElement = ()=>{
+    return '<p class="text-center text-gray-500 col-span-full">No se encontraron productos.</p>';
+}
+export const errorElement = ()=>{
+    return '<p class="text-center text-red-500 col-span-full">Hubo un error al obtener los productos. Intenta nuevamente.</p>';
+}

@@ -1,4 +1,4 @@
-import { loadingElement, resultElement } from "./DOMelements.js";
+import { loadingElement, notFoundElement, resultElement } from "./DOMelements.js";
 
 const form = document.querySelector('#search-form');
 const results = document.querySelector('#results');
@@ -49,13 +49,13 @@ form.addEventListener('submit', async (e) => {
         results.innerHTML = ''; // Limpiar los elementos de carga
 
         if (res.length === 0) {
-            results.innerHTML = '<p class="text-center text-gray-500">No se encontraron productos.</p>';
+            results.innerHTML = notFoundElement()
         } else {
             res.forEach(r => {
                 results.innerHTML += resultElement(r); // Mostrar los resultados
             });
         }
     } else {
-        results.innerHTML = '<p class="text-center text-red-500">Hubo un error al obtener los productos. Intenta nuevamente.</p>';
+        results.innerHTML = errorElement()
     }
 });

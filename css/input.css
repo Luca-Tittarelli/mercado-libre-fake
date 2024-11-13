@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media(width <= 640px){
+    header nav{
+        transform: translateY(-20vh);
+        transition: transform .3s;
+    }
+    header .responsive{
+        transform: translateY(calc(80px + 45px));
+    }
+}
